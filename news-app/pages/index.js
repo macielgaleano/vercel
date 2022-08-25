@@ -10,7 +10,7 @@ export default function Home({ news }) {
         {news?.length > 0 &&
           news.map((article, index) => {
             return (
-              <article>
+              <article key={index}>
                 <img
                   alt={`Image for the article ${article}`}
                   src={article.urlToImage}
