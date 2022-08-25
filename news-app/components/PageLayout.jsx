@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-export default function PageLayout({ children, title = "Anime Noticias" }) {
+export default function PageLayout({ children, title = "WallStreet" }) {
   return (
     <div className="page-layout">
       <Head>
