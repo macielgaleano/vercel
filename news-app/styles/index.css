@@ -33,6 +33,12 @@ header h1 {
   transition: all 100ms ease-out;
 }
 
+.articles article img {
+  max-height: 200px;
+  min-width: 100%;
+  object-fit: cover;
+}
+
 .articles article:hover {
   transform: scale(1.04);
   -webkit-filter: grayscale(0);
