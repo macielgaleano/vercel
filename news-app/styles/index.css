@@ -1,0 +1,40 @@
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 40px 2rem;
+}
+
+header h1 {
+  margin: 0rem;
+}
+
+/* about */
+
+.about {
+  margin: 0 2rem;
+}
+
+/* articles */
+
+.articles {
+  margin: 0 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 15px;
+}
+
+.articles article {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+
+.articles article:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}

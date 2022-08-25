@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 export default function Home({ news }) {
   return (
     <PageLayout title={"Home"}>
-      <div className={styles.container}>
+      <div className={"articles"}>
         {news?.length === 0 && <p>Not articles</p>}
         {news?.length > 0 &&
           news.map((article, index) => {
