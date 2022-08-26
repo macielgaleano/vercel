@@ -30,7 +30,7 @@ export default function Home({ news }) {
     </PageLayout>
   );
 }
-
+/* 
 export async function getStaticProps() {
   const response = await fetch(
     "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=a30bdb464e4940598e2a978dd29a33ae"
@@ -41,11 +41,11 @@ export async function getStaticProps() {
       news: articles,
     },
   };
-}
+} */
 
 //Server side props
 
-/* export async function getServerSideProps() {
+export async function getServerSideProps() {
   const response = await fetch(
     "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=a30bdb464e4940598e2a978dd29a33ae"
   );
@@ -56,4 +56,3 @@ export async function getStaticProps() {
     },
   };
 }
- */
