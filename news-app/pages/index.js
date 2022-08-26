@@ -18,6 +18,7 @@ export default function Home({ news }) {
                     height={300}
                     alt={`Image for the article ${article}`}
                     src={article.urlToImage}
+                    priority={index < 8}
                   ></Image>
                 )}
                 <h2>{article.title}</h2>

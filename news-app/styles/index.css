@@ -36,11 +36,20 @@ header h1 {
 .articles article img {
   max-height: 200px;
   min-width: 100%;
-  object-fit: cover;
+  object-fit: cover2;
 }
 
 .articles article:hover {
   transform: scale(1.04);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+
+@media (max-width: 500px) {
+  .articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
 }
